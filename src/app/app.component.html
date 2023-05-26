@@ -1,0 +1,13 @@
+<div class="app-container">
+  <div class="navbar">
+    <app-navbarLogo></app-navbarLogo>
+    <app-navbar (sendObjectActions)="receiveObjectActions($event)"></app-navbar>
+  </div>
+
+  <div class="content">
+    <app-body [menuSelect]="menuSelect"></app-body>
+  </div>
+  <a href="https://wa.me/3135959152" target="_blank" class="whatsapp-icon">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>

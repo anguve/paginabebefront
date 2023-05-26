@@ -1,0 +1,465 @@
+<div class="container">
+  <div
+    class="carta"
+    *ngFor="let item of cartas; let i = index"
+    [hidden]="!(category == 0)"
+  >
+    <div class="carta-item">
+      <div class="carta-item-icon">
+        <img
+          *ngIf="item.imagSelect === 0"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_442_ar-1611352906.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+        <img
+          *ngIf="item.imagSelect === 1"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_439_ar-1611352730.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+      </div>
+      <div>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="0"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="1"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+      </div>
+      <span>Silla Para Auto BOOSTER</span>
+      <span>$82.000</span>
+      <span>disponible</span>
+    </div>
+  </div>
+
+  <div
+    class="carta"
+    *ngFor="let item of cartas; let i = index"
+    [hidden]="!(category == 1)"
+  >
+    <div class="carta-item">
+      <div class="carta-item-icon">
+        <img
+          *ngIf="item.imagSelect === 0"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_3177_ar-1604424828.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+        <img
+          *ngIf="item.imagSelect === 1"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_3181_ar-1604426926.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+      </div>
+      <div>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="0"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="1"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+      </div>
+      <span>Silla Para Auto BOOSTER</span>
+      <span>$82.000</span>
+      <span>disponible</span>
+    </div>
+  </div>
+
+  <div
+    class="carta"
+    *ngFor="let item of cartas; let i = index"
+    [hidden]="!(category == 2)"
+  >
+    <div class="carta-item">
+      <div class="carta-item-icon">
+        <img
+          *ngIf="item.imagSelect === 0"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_897_ar-1601572738.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+        <img
+          *ngIf="item.imagSelect === 1"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_898_ar-1601571612.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+      </div>
+      <div>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="0"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="1"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+      </div>
+      <span>Silla Para Auto BOOSTER</span>
+      <span>$82.000</span>
+      <span>disponible</span>
+    </div>
+  </div>
+
+  <div
+    class="carta"
+    *ngFor="let item of cartas; let i = index"
+    [hidden]="!(category == 3)"
+  >
+    <div class="carta-item">
+      <div class="carta-item-icon">
+        <img
+          *ngIf="item.imagSelect === 0"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_331_ar-1604325638.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+        <img
+          *ngIf="item.imagSelect === 1"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_1995_ar-1604326087.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+      </div>
+      <div>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="0"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="1"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+      </div>
+      <span>Silla Para Auto BOOSTER</span>
+      <span>$82.000</span>
+      <span>disponible</span>
+    </div>
+  </div>
+
+  <div
+    class="carta"
+    *ngFor="let item of cartas; let i = index"
+    [hidden]="!(category == 4)"
+  >
+    <div class="carta-item">
+      <div class="carta-item-icon">
+        <img
+          *ngIf="item.imagSelect === 0"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_2291_ar-1608317314.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+        <img
+          *ngIf="item.imagSelect === 1"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_2290_ar-1608317264.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+      </div>
+      <div>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="0"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="1"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+      </div>
+      <span>Silla Para Auto BOOSTER</span>
+      <span>$82.000</span>
+      <span>disponible</span>
+    </div>
+  </div>
+
+  <div
+    class="carta"
+    *ngFor="let item of cartas; let i = index"
+    [hidden]="!(category == 5)"
+  >
+    <div class="carta-item">
+      <div class="carta-item-icon">
+        <img
+          *ngIf="item.imagSelect === 0"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_483_ar-1606942813.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+        <img
+          *ngIf="item.imagSelect === 1"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_408_ar-1606942771.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+      </div>
+      <div>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="0"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="1"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+      </div>
+      <span>Silla Para Auto BOOSTER</span>
+      <span>$82.000</span>
+      <span>disponible</span>
+    </div>
+  </div>
+
+  <div
+    class="carta"
+    *ngFor="let item of cartas; let i = index"
+    [hidden]="!(category == 6)"
+  >
+    <div class="carta-item">
+      <div class="carta-item-icon">
+        <img
+          *ngIf="item.imagSelect === 0"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_485_ar-1606943523.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+        <img
+          *ngIf="item.imagSelect === 1"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_486_ar-1606943582.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+      </div>
+      <div>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="0"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="1"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+      </div>
+      <span>Silla Para Auto BOOSTER</span>
+      <span>$82.000</span>
+      <span>disponible</span>
+    </div>
+  </div>
+
+  <div
+    class="carta"
+    *ngFor="let item of cartas; let i = index"
+    [hidden]="!(category == 7)"
+  >
+    <div class="carta-item">
+      <div class="carta-item-icon">
+        <img
+          *ngIf="item.imagSelect === 0"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_3177_ar-1604424828.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+        <img
+          *ngIf="item.imagSelect === 1"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_3181_ar-1604426926.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+      </div>
+      <div>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="0"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="1"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+      </div>
+      <span>Silla Para Auto BOOSTER</span>
+      <span>$82.000</span>
+      <span>disponible</span>
+    </div>
+  </div>
+
+  <div
+    class="carta"
+    *ngFor="let item of cartas; let i = index"
+    [hidden]="!(category == 8)"
+  >
+    <div class="carta-item">
+      <div class="carta-item-icon">
+        <img
+          *ngIf="item.imagSelect === 0"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_3652_ar-1606832110.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+        <img
+          *ngIf="item.imagSelect === 1"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_3654_ar-1606832757.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+      </div>
+      <div>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="0"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="1"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+      </div>
+      <span>Silla Para Auto BOOSTER</span>
+      <span>$82.000</span>
+      <span>disponible</span>
+    </div>
+  </div>
+
+  <div
+    class="carta"
+    *ngFor="let item of cartas; let i = index"
+    [hidden]="!(category == 9)"
+  >
+    <div class="carta-item">
+      <div class="carta-item-icon">
+        <img
+          *ngIf="item.imagSelect === 0"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_661_ar-1654096994.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+        <img
+          *ngIf="item.imagSelect === 1"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_3666_ar-1649958129.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+      </div>
+      <div>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="0"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="1"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+      </div>
+      <span>Silla Para Auto BOOSTER</span>
+      <span>$82.000</span>
+      <span>disponible</span>
+    </div>
+  </div>
+
+  <div
+    class="carta"
+    *ngFor="let item of cartas; let i = index"
+    [hidden]="!(category == 10)"
+  >
+    <div class="carta-item">
+      <div class="carta-item-icon">
+        <img
+          *ngIf="item.imagSelect === 0"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_3177_ar-1604424828.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+        <img
+          *ngIf="item.imagSelect === 1"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_3181_ar-1604426926.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+      </div>
+      <div>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="0"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="1"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
+      </div>
+      <span>Silla Para Auto BOOSTER</span>
+      <span>$82.000</span>
+      <span>disponible</span>
+    </div>
+  </div>
+
+  <
+</div>
