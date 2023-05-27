@@ -1,0 +1,95 @@
+<div class="form-container">
+  <h2>Subir Imagen</h2>
+  <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" formControlName="nombre" required />
+    </div>
+
+    <div class="form-group">
+      <label for="categoria">Categoría:</label>
+      <select id="categoria" formControlName="categoria" required>
+        <option value="" disabled selected>Selecciona una categoría</option>
+        <option value="Coches">Coches</option>
+        <option value="Sillas para auto">Sillas para auto</option>
+        <option value="Desarrollo y estimulación">
+          Desarrollo y estimulación
+        </option>
+        <option value="Cunas corral">Cunas corral</option>
+        <option value="Silla comedor">Silla comedor</option>
+        <option value="Mecedoras">Mecedoras</option>
+        <option value="Porteo">Porteo</option>
+        <option value="Baño">Baño</option>
+        <option value="Lactancia">Lactancia</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="estado">Estado:</label>
+      <input type="text" id="estado" formControlName="estado" required />
+    </div>
+
+    <div class="form-group">
+      <label for="precio">Precio:</label>
+      <input type="number" id="precio" formControlName="precio" required />
+    </div>
+
+    <div class="form-group">
+      <label for="foto">Foto:</label>
+      <input
+        type="file"
+        id="foto"
+        formControlName="foto"
+        (change)="onFileSelected($event)"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="foto2">Foto2:</label>
+      <input
+        type="file"
+        id="foto2"
+        formControlName="foto2"
+        (change)="onFileSelected2($event)"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="foto3">Foto3:</label>
+      <input
+        type="file"
+        id="foto3"
+        formControlName="foto3"
+        (change)="onFileSelected3($event)"
+        required
+      />
+    </div>
+
+    <button type="submit" [disabled]="formulario.invalid">Guardar</button>
+  </form>
+</div>
+<table class="tabla">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Foto</th>
+      <th>acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of items">
+      <td>{{ item.nombre }}</td>
+      <td>{{ item.precio }}</td>
+      <td>
+        <img [src]="item.foto" alt="Foto" class="foto" />
+      </td>
+      <td>
+        <button>borrar</button>
+        <button>editar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

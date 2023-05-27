@@ -5,9 +5,22 @@
   </div>
 
   <div class="content">
-    <app-body [menuSelect]="menuSelect"></app-body>
+    <ng-container *ngIf="currentRoute === '/back'; else bodyContent">
+      <app-back></app-back>
+    </ng-container>
+
+    <ng-template #bodyContent>
+      <app-body [menuSelect]="menuSelect"></app-body>
+    </ng-template>
   </div>
   <a href="https://wa.me/3135959152" target="_blank" class="whatsapp-icon">
     <i class="fab fa-whatsapp"></i>
+  </a>
+  <a
+    href="https://www.instagram.com/arrullar/"
+    target="_blank"
+    class="instagram-icon"
+  >
+    <i class="fab fa-instagram"></i>
   </a>
 </div>

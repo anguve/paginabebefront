@@ -7,7 +7,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarLogoComponent } from './navbarLogo/navbarLogo.component';
 import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { BackComponent } from './back/back.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +18,15 @@ import { FormsModule } from '@angular/forms';
     NavbarLogoComponent,
     FooterComponent,
     BodyComponent,
+    BackComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

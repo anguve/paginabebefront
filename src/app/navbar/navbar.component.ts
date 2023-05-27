@@ -1,5 +1,4 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { NavigationServiceService } from '../services/NavigationService.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +7,7 @@ import { NavigationServiceService } from '../services/NavigationService.service'
 })
 export class NavbarComponent implements OnInit {
   @Output() sendObjectActions = new EventEmitter<object>();
-  constructor(private navigationService: NavigationServiceService) {}
+  constructor() {}
 
   mostrarMenu(item: any) {
     this.sendObjectActions.emit(item);

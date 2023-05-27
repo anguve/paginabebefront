@@ -16,6 +16,11 @@
           src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_439_ar-1611352730.jpg&w=640&q=75"
           class="carta-item-icon"
         />
+        <img
+          *ngIf="item.imagSelect === 2"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_439_ar-1611352730.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
       </div>
       <div>
         <label>
@@ -34,10 +39,19 @@
             [(ngModel)]="item.imagSelect"
           />
         </label>
+        <label>
+          <input
+            type="radio"
+            name="radioGroup{{ i }}"
+            [value]="2"
+            [(ngModel)]="item.imagSelect"
+          />
+        </label>
       </div>
       <span>Silla Para Auto BOOSTER</span>
       <span>$82.000</span>
       <span>disponible</span>
+      <button (click)="redirectToWhatsApp()">Comprar</button>
     </div>
   </div>
 
@@ -56,6 +70,16 @@
         <img
           *ngIf="item.imagSelect === 1"
           src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_3181_ar-1604426926.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+        <img
+          *ngIf="item.imagSelect === 2"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_3177_ar-1604424828.jpg&w=640&q=75"
+          class="carta-item-icon"
+        />
+        <img
+          *ngIf="item.imagSelect === 3"
+          src="https://t3q7m8v4.stackpathcdn.com/_next/image/?url=https%3A%2F%2Ft3q7m8v4.stackpathcdn.com%2Fuploads%2Fproductos_imagen_listados_3177_ar-1604424828.jpg&w=640&q=75"
           class="carta-item-icon"
         />
       </div>
